@@ -5,14 +5,11 @@
 
 :root {
   --foreground: 255, 255, 255;
-  --background-start: 30, 30, 30;
-  --background-end: 30, 30, 30;
+  --background: 30, 30, 30;
 }
 
 body {
   font-family: Lato;
   color: rgb(var(--foreground));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end))) rgb(var(--background-start));
+  background: rgb(var(--background));
 }
