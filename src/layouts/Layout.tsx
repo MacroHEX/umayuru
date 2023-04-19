@@ -32,7 +32,7 @@ export const Layout = ({ title, children }: Props) => {
           content="Reproductor con subs en español para los cortos de Umayuru"
         />
         <meta name="keywords" content="uma musume, umayuru, subs esp" />
-        <meta property="og:title" content={`${title}`} />
+        <meta property="og:title" content={`${title}` || "Umayuru - WIP"} />
         <meta
           property="og:description"
           content={"Reproductor con subs en español para los cortos de Umayuru"}
