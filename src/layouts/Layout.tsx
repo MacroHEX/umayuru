@@ -6,6 +6,10 @@ import React, { ReactElement } from "react";
 //
 import Head from "next/head";
 
+// ::: Ui
+//
+import { Navbar, Wip } from "../ui";
+
 // ::: Interface
 //
 interface Props {
@@ -35,7 +39,10 @@ export const Layout = ({ title, children }: Props) => {
         />
         <meta property="og:image" content={`${origin}/img/og/banner.png`} />
       </Head>
-
+      {/* uncomment for production */}
+      {/* <Navbar /> */}
+      {/* comment for production */}
+      <Wip />
       <main style={{ padding: "0px 20px" }}>{children}</main>
     </>
   );
